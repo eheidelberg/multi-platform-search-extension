@@ -10,6 +10,9 @@ This extension can be easily customized to add any source you want, as long as y
 - Bypass restrictions that prevent JavaScript bookmarklets from working on LinkedIn Recruiter
 - Easily customizable to add any additional source with its specific search URL
 
+![Extension Screenshot](./images/screenshot.png)
+
+
 ## How to Use
 
 Install the extension on your Chrome browser. If you have the source files, you can load the extension as an "Unpacked extension" by following these steps:
