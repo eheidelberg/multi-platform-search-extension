@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Search Extension",
+  "version": "1.0",
+  "description": "Search selected text on different platforms",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Search on Multiple Platforms",
+    "default_icon": "icon.png"
+  }
+}
