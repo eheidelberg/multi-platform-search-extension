@@ -19,8 +19,9 @@ This extension can be easily customized to add any source you want, as long as y
 
 Install the extension on your Chrome browser. If you have the source files, you can load the extension as an "Unpacked extension" by following these steps:
 
-- Open the Chrome browser and navigate to chrome://extensions/.
-- Enable "Developer mode" by clicking the toggle switch in the top right corner.
+- Save the files on your PC in a folder
+- Open the Chrome browser and navigate to chrome://extensions/
+- Enable "Developer mode" by clicking the toggle switch in the top right corner
 - Click on the "Load unpacked" button, then navigate to the folder containing the extension's source files and select it.
 - Once the extension is installed, you will see its icon in the Chrome browser's toolbar.
 
