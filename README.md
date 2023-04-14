@@ -1,7 +1,7 @@
 # Multi-Platform Search Extension
 Fully created with the help of GPT4.
 
-The Multi-Platform Search Extension is a Chrome extension that allows you to easily search for any selected text on the supported platforms, including LinkedIn Recruiter, which typically prevents JavaScript bookmarklets from functioning. The extension is designed to bypass these restrictions and provide a seamless search experience across multiple platforms.
+The Multi-Platform Search Extension is a Chrome extension that allows you to easily search for any selected text on the supported platforms, including LinkedIn Recruiter, which typically/sometimes prevents JavaScript bookmarklets from functioning. The extension is designed to bypass these restrictions and provide a seamless search experience across multiple platforms.
 
 This extension can be easily customized to add any source you want, as long as you know the specific search URL for that platform.
 
