@@ -1,3 +1,18 @@
+## Version 1.2
+
+### What's New in Version 1.2
+
+#### Added
+- Google search is now supported with adjustable Boolean search queries.
+
+#### Changed
+- Updated some of the URLs for better search results.
+- Changed layout for better scalability when adding more sources.
+- Updated icon for visibility during the extension loading process.
+
+
+
+## Version 1.0
 # Multi-Platform Search Extension
 Fully created with the help of GPT4.
 
