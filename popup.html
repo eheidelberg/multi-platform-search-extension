@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <style>
+<style>
     body {
-      width: 300px;
-      height: 250px;
-      margin: 0;
-      padding: 15px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      background-color: #1e1e1e;
-      color: #ffffff;
+  	height: 100%;
+  	overflow: hidden;
+  	width: 350px;
+  	margin: 0;
+  	padding: 15px;
+  	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  	text-align: center;
+  	background-color: #1e1e1e;
+  	color: #ffffff;
     }
     h1 {
       font-size: 24px;
@@ -34,20 +36,60 @@
       border-radius: 3px;
       outline: none;
       transition: background-color 0.3s, color 0.3s;
+      flex: 1;
+      flex-basis: 150px;
+      margin: 5px;
+      max-width: calc(50% - 10px); /* considering margins */
     }
     button:hover {
       background-color: #00ffff;
       color: #1e1e1e;
     }
-  </style>
+    #searchOptions {
+    	 display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+    	align-items: center;
+    	gap: 10px;
+    }
+  
+    .powered-by {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #ffffff;
+      font-size: 12px;
+    }
+    
+    .powered-by {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #ffffff;
+      font-size: 12px;
+      margin-top: 20px;  /* Added margin */
+    }
+    </style>
 </head>
 <body>
-  <h1>Multi-Platform Search</h1>
-  <p>Select text and click a button to search on the corresponding platform:</p>
-  <button id="searchLinkedin">Search on Linkedin</button><br>
-  <button id="searchGithub">Search on Github</button><br>
-  <button id="searchMobyGames">Search on MobyGames</button><br>
-  <button id="searchArtStation">Search on ArtStation</button><br>
-  <script src="popup.js"></script>
+<h1>Multi-Platform Search</h1>
+<p>Select text and click a button to search on the corresponding platform:</p>
+<button id="searchLinkedin">Search on Linkedin</button><br/>
+<button id="searchGithub">Search on Github</button><br/>
+<button id="searchMobyGames">Search on MobyGames</button><br/>
+<button id="searchArtStation">Search on ArtStation</button><br/>
+<button id="searchGoogle">Search on Google</button><br/>
+<script src="popup.js"></script>
+<br/>
+<div class="powered-by">
+      Powered by <a href="http://www.absoluterecruiter.com" style="color: #ffffff;" target="_blank">Absolute Recruiter </a>
+</div>
+<div class="powered-by">
+      Powered by <a href="http://www.absoluterecruiter.com" style="color: #ffffff;" target="_blank">Absolute Recruiter </a>
+</div>
+
+<div class="powered-by">
+      Powered by <a href="http://www.absoluterecruiter.com" style="color: #ffffff;" target="_blank">Absolute Recruiter</a>
+</div>
 </body>
 </html>
