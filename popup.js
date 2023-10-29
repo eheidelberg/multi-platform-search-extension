@@ -2,13 +2,14 @@ const searchLinkedinButton = document.getElementById('searchLinkedin');
 const searchGithubButton = document.getElementById('searchGithub');
 const searchMobyGamesButton = document.getElementById('searchMobyGames');
 const searchArtStationButton = document.getElementById('searchArtStation');
+const searchGoogleButton = document.getElementById('searchGoogle');
 
 searchLinkedinButton.addEventListener('click', () => searchSelectedText('Linkedin'));
 searchGithubButton.addEventListener('click', () => searchSelectedText('Github'));
 searchMobyGamesButton.addEventListener('click', () => searchSelectedText('mobyGames'));
 searchArtStationButton.addEventListener('click', () => searchSelectedText('artStation'));
-searchWorkableButton.addEventListener('click', () => searchSelectedText('workable'));
-searchHelloTalentButton.addEventListener('click', () => searchSelectedText('helloTalent'));
+searchGoogleButton.addEventListener('click', () => searchSelectedText('Google'));
+
 
 function searchSelectedText(platform) {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -25,13 +26,16 @@ function searchSelectedText(platform) {
  		    url = `https://www.linkedin.com/search/results/people/?keywords=${selection}`;
   			break;
           case 'Github':
-          	url = `https://github.com/search?type=Users&q=${encodeURIComponent(results[0].result)}`;
+          	url = `https://github.com/search?type=Users&q=${selection}`;
           	break;
           case 'mobyGames':
             url = `https://www.mobygames.com/search/quick?q=${selection}`;
             break;
           case 'artStation':
             url = `https://www.artstation.com/search/artists?sort_by=followers&query=${selection}`;
+            break;
+          case 'Google':
+            url = `https://www.google.com/search?q="${selection}"+(Add any Boolean you want!)`;
             break;
         }
 
