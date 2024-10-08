@@ -3,12 +3,14 @@ const searchGithubButton = document.getElementById('searchGithub');
 const searchMobyGamesButton = document.getElementById('searchMobyGames');
 const searchArtStationButton = document.getElementById('searchArtStation');
 const searchGoogleButton = document.getElementById('searchGoogle');
+const searchBehanceButton = document.getElementById('searchBehance');
 
 searchLinkedinButton.addEventListener('click', () => searchSelectedText('Linkedin'));
 searchGithubButton.addEventListener('click', () => searchSelectedText('Github'));
 searchMobyGamesButton.addEventListener('click', () => searchSelectedText('mobyGames'));
 searchArtStationButton.addEventListener('click', () => searchSelectedText('artStation'));
 searchGoogleButton.addEventListener('click', () => searchSelectedText('Google'));
+searchBehanceButton.addEventListener('click', () => searchSelectedText('Behance'));
 
 
 function searchSelectedText(platform) {
@@ -36,6 +38,9 @@ function searchSelectedText(platform) {
             break;
           case 'Google':
             url = `https://www.google.com/search?q="${selection}"+(Add any Boolean you want!)`;
+            break;
+          case 'Behance':
+            url = `https://www.behance.net/search/users?search="${selection}"`;
             break;
         }
 
