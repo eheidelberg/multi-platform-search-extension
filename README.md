@@ -2,6 +2,8 @@
 - Improved design/layout
 - Corrected the Behance search functionality
 
+<img src="./screenshot2.png" alt="Extension Screenshot" width="50%" />
+
 ## Version 1.2
 
 ### What's New in Version 1.2
