@@ -1,3 +1,6 @@
+## Version 1.3
+- Improved design/layout
+
 ## Version 1.2
 
 ### What's New in Version 1.2
