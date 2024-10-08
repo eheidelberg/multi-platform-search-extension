@@ -1,95 +1,95 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-<style>
+  <title>Multi-Platform Search</title>
+  <style>
     body {
-  	height: 100%;
-  	overflow: hidden;
-  	width: 350px;
-  	margin: 0;
-  	padding: 15px;
-  	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  	text-align: center;
-  	background-color: #1e1e1e;
-  	color: #ffffff;
+      height: 100%;
+      overflow: hidden;
+      width: 350px;
+      margin: 0;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #1e1e1e; /* Dark background */
+      color: #ffffff; /* White text */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
+
     h1 {
       font-size: 24px;
       margin-bottom: 10px;
       color: #00ffff;
       text-shadow: 0 0 5px #00ffff;
     }
-    p {
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
+
     button {
       font-size: 16px;
       cursor: pointer;
-      margin-bottom: 10px;
       background-color: #1e1e1e;
       color: #00ffff;
       border: 2px solid #00ffff;
       padding: 8px 16px;
       text-shadow: 0 0 5px #00ffff;
-      border-radius: 3px;
+      border-radius: 50px; /* Rounded buttons */
       outline: none;
       transition: background-color 0.3s, color 0.3s;
-      flex: 1;
-      flex-basis: 150px;
       margin: 5px;
-      max-width: calc(50% - 10px); /* considering margins */
+      width: 150px; /* Set a fixed width for buttons */
     }
+
     button:hover {
       background-color: #00ffff;
       color: #1e1e1e;
     }
+
     #searchOptions {
-    	 display: flex;
-    	flex-wrap: wrap;
-    	justify-content: space-between;
-    	align-items: center;
-    	gap: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end; /* Align buttons to the right */
+      align-items: center;
+      gap: 10px;
     }
-  
+
     .powered-by {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      color: #ffffff;
+      margin-top: 20px;
+      margin-bottom: 20px;
       font-size: 12px;
+      color: #00ffff;
+      text-shadow: 0 0 3px #00ffff;
     }
-    
-    .powered-by {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      color: #ffffff;
-      font-size: 12px;
-      margin-top: 20px;  /* Added margin */
+
+    .powered-by a {
+      color: #00ffff; /* Cyan color for link */
+      text-decoration: none;
+      font-weight: 600;
     }
-    </style>
+
+    .powered-by a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-<h1>Multi-Platform Search</h1>
-<p>Select text and click a button to search on the corresponding platform:</p>
-<button id="searchLinkedin">Search on Linkedin</button><br/>
-<button id="searchGithub">Search on Github</button><br/>
-<button id="searchMobyGames">Search on MobyGames</button><br/>
-<button id="searchArtStation">Search on ArtStation</button><br/>
-<button id="searchGoogle">Search on Google</button><br/>
-<script src="popup.js"></script>
-<br/>
-<div class="powered-by">
-      Powered by <a href="http://www.absoluterecruiter.com" style="color: #ffffff;" target="_blank">Absolute Recruiter </a>
-</div>
-<div class="powered-by">
-      Powered by <a href="http://www.absoluterecruiter.com" style="color: #ffffff;" target="_blank">Absolute Recruiter </a>
-</div>
+  <h1>Multi-Platform Search</h1>
 
-<div class="powered-by">
-      Powered by <a href="http://www.absoluterecruiter.com" style="color: #ffffff;" target="_blank">Absolute Recruiter</a>
-</div>
+  <p>Select text and click a button to search on the corresponding platform:</p>
+
+  <div id="searchOptions">
+    <button id="searchLinkedin">Search on Linkedin</button>
+    <button id="searchGithub">Search on Github</button>
+    <button id="searchMobyGames">Search on MobyGames</button>
+    <button id="searchArtStation">Search on ArtStation</button>
+    <button id="searchGoogle">Search on Google</button>
+    <button id="searchBehance">Search on Behance</button>
+  </div>
+
+  <div class="powered-by">
+    Powered by <a href="http://www.absoluterecruiter.com" target="_blank">Absolute Recruiter</a>
+  </div>
+
+  <script src="popup.js"></script>
 </body>
 </html>
