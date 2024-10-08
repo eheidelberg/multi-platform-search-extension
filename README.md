@@ -1,5 +1,6 @@
 ## Version 1.3
 - Improved design/layout
+- Corrected the Behance search functionality
 
 ## Version 1.2
 
